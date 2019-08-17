@@ -15,21 +15,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //회원가입 선택화면으로 전환
-        Button button1 = (Button)findViewById(R.id.btnRegist);
-        button1.setOnClickListener(new View.OnClickListener() {
+        Button ChsRegist = (Button) findViewById(R.id.btnRegist);
+        ChsRegist.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick (View view) {
+            public void onClick(View view) {
                 Intent Intent = new Intent(getApplicationContext(), RegistChoose.class);
                 startActivityForResult(Intent, 100);
             }
         });
 
         //로그인 검증화면으로 전환
-        Button button2 = (Button)findViewById(R.id.actasdasdr);
-        button2.setOnClickListener(new View.OnClickListener(){
+
 
     }
-
-
 }

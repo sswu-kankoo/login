@@ -30,7 +30,7 @@ public class RegistActivity1_auth extends AppCompatActivity implements View.OnCl
 
     TextView time_counter; //시간을 보여주는 TextView
     EditText emailAuth_number; //인증 번호를 입력 하는 칸
-    Button emailAuth_btn; // 인증버튼
+    Button btnDone; // 인증버튼
     CountDownTimer countDownTimer;
     final int MILLISINFUTURE = 300 * 1000; //총 시간 (300초 = 5분)
     final int COUNT_DOWN_INTERVAL = 1000; //onTick 메소드를 호출할 간격 (1초)
@@ -53,7 +53,7 @@ public class RegistActivity1_auth extends AppCompatActivity implements View.OnCl
         //줄어드는 시간을 나타내는 TextView
         emailAuth_number = (EditText) dialogLayout.findViewById(R.id.emailAuth_number);
         //사용자 인증 번호 입력창
-        emailAuth_btn = (Button) dialogLayout.findViewById(R.id.emailAuth_btn);
+        btnDone = (Button) dialogLayout.findViewById(R.id.btnDone);
         //인증하기 버튼
 
 
@@ -85,7 +85,7 @@ public class RegistActivity1_auth extends AppCompatActivity implements View.OnCl
             }
         }.start();
 
-        emailAuth_btn.setOnClickListener(this);
+        btnSendAuthNum.setOnClickListener(this);
     }
 
     @Override
@@ -104,7 +104,7 @@ public class RegistActivity1_auth extends AppCompatActivity implements View.OnCl
                 countDownTimer();
                 break;
 
-            case R.id.emailAuth_btn : //다이얼로그 내의 인증번호 인증 버튼을 눌렀을 시
+            case R.id.btnDone : //다이얼로그 내의 인증번호 인증 버튼을 눌렀을 시
 
                 int user_answer = Integer.parseInt(emailAuth_number.getText().toString());
                 if(user_answer==randomNum){

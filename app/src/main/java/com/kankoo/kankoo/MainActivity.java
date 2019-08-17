@@ -1,36 +1,35 @@
 package com.kankoo.kankoo;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
-    private Button btnCancel, btnDone;
-    private EditText etasdasd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn_go = (Button) findViewByID(R.id.btn_go);
-        btn_go.setOnClickListener(
-            new Button.OnClickListener() {
-                public void onClick(View v) {
-                    //SubActivity로 가는 인텐트를 생성
-                    Intent intent = new Intent(this, RegistChoose.class);
-                    //액티비티 시작!
-                    startActivity(intent);
-                }
+        //회원가입 선택화면으로 전환
+        Button button1 = (Button)findViewById(R.id.btnRegist);
+        button1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick (View view) {
+                Intent Intent = new Intent(getApplicationContext(), RegistChoose.class);
+                startActivityForResult(Intent, 100);
             }
-        );
+        });
 
-
+        //로그인 검증화면으로 전환
+        Button button2 = (Button)findViewById(R.id.actasdasdr);
+        button2.setOnClickListener(new View.OnClickListener(){
 
     }
+
+
 }

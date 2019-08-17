@@ -9,21 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mainpage2"></activity>
-        <activity android:name=".mainpage1" />
-        <activity android:name=".RegistChoose" />
-        <activity android:name=".RegistActivity1_auth_dialog" />
-        <activity android:name=".RegistActivity1_auth" />
-        <activity android:name=".RegistActivity2" />
-        <activity android:name=".RegistActivity1" />
-        <activity android:name=".QRgen" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegistChoose" />
     </application>
 
 </manifest>

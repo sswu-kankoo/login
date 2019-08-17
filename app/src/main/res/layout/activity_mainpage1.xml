@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical"
+tools:context=".mainpage1">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="443dp"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:text="안녕하세요!" />
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="28dp" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="411dp"
+    android:layout_height="49dp"
+    android:gravity="center"
+    android:text="<사용자>" />
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+<Button
+    android:id="@+id/btnViewQR"
+    android:layout_width="174dp"
+    android:layout_height="wrap_content"
+    android:text="간식쿠폰 보기" />
+
+<Button
+    android:id="@+id/btnExchangeQR"
+    android:layout_width="174dp"
+    android:layout_height="wrap_content"
+    android:text="간식쿠폰 교환하기" />
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="15dp" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="411dp"
+    android:layout_height="49dp"
+    android:gravity="center"
+    android:text="<관리자>" />
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="10dp" />
+
+<Button
+    android:id="@+id/button3"
+    android:layout_width="174dp"
+    android:layout_height="wrap_content"
+    android:text="간식쿠폰 제작" />
+
+</LinearLayout>

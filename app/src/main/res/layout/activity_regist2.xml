@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="아이디를 입력하세요"
-        android:inputType="textID" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textShopName"
+        android:inputType="text"
         android:ems="10"
         android:hint="가게 명을 입력하세요 "
         android:id="@+id/etShopName" />
@@ -49,10 +49,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textShopNumber"
+        android:inputType="number"
         android:ems="10"
         android:hint="사업자 등록번호를 입력하세요 "
-        android:id="@+id/etShopNumber" />
+        android:id="@+id/etBRN" />
 
     <LinearLayout
         android:orientation="horizontal"

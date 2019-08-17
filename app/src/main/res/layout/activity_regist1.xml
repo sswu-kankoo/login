@@ -20,7 +20,7 @@ tools:context=".RegistActivity1">
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="아이디를 입력하세요"
-        android:inputType="textID" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:layout_width="match_parent"
@@ -42,10 +42,10 @@ tools:context=".RegistActivity1">
     <AutoCompleteTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textMajor"
+        android:textColorHint="#555555"
         android:completionThreshold="1"
         android:ems="10"
-        android:hint="학과 이름 전체를 선택하세요 "
+        android:hint="학과 이름 전체를 입력하세요 "
         android:id="@+id/etMajor" >
         <requestFocus/>
     </AutoCompleteTextView>
@@ -65,7 +65,7 @@ tools:context=".RegistActivity1">
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="학번을 입력하세요 "
-        android:inputType="textStudentID" />
+        android:inputType="number" />
 
     <LinearLayout
     android:orientation="horizontal"

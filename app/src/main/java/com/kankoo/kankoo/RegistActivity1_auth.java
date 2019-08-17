@@ -18,7 +18,7 @@ public class RegistActivity1_auth extends AppCompatActivity implements View.OnCl
     final int randomNum = 106254; //테스트할 6자리 인증번호
 
     EditText authEmail;
-    Button authBtn;
+    Button btnSendAuthNum;
 
     /*Dialog에 관련된 필드 */
 
@@ -41,8 +41,8 @@ public class RegistActivity1_auth extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.activity_regist_activity1_auth);
 
         authEmail=(EditText)findViewById(R.id.authEmail);
-        authBtn=(Button)findViewById(R.id.authBtn);
-        authBtn.setOnClickListener(this);
+        btnSendAuthNum=(Button)findViewById(R.id.btnSendAuthNum);
+        btnSendAuthNum.setOnClickListener(this);
 
 
     }
@@ -93,7 +93,7 @@ public class RegistActivity1_auth extends AppCompatActivity implements View.OnCl
 
         switch (v.getId()){
 
-            case R.id.authBtn :
+            case R.id.btnSendAuthNum :
 
                 dialog = LayoutInflater.from(this);
                 dialogLayout = dialog.inflate(R.layout.activity_regist_activity1_auth_dialog, null); // LayoutInflater를 통해 XML에 정의된 Resource들을 View의 형태로 반환 시켜 줌

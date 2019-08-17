@@ -12,3 +12,7 @@ public class RegistActivity1_auth_dialog extends AppCompatActivity {
         setContentView(R.layout.activity_regist_activity1_auth_dialog);
     }
 }
+
+
+//인증번호 맞으면 가입정보 입력값 return
+//인증번호 틀리면 오류 팝업과 메인화면 return

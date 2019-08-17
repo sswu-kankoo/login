@@ -24,7 +24,7 @@ public class RegistActivity1 extends Activity {
 
     private EditText etPersonName;
     private EditText etStudentID;
-    private Button btnDone;
+    private Button btnEmailAuth;
     private Button btnCancel;
 
     private AutoCompleteTextView etMajor;
@@ -54,7 +54,7 @@ public class RegistActivity1 extends Activity {
         etPersonName = (EditText) findViewById(R.id.etPersonName);
         etStudentID = (EditText) findViewById(R.id.etStudentID);
 
-        btnDone = (Button) findViewById(R.id.btnDone);
+        btnEmailAuth = (Button) findViewById(R.id.btnEmailAuth);
         btnCancel = (Button) findViewById(R.id.btnCancel);
 
         // 비밀번호 일치 검사
@@ -84,7 +84,7 @@ public class RegistActivity1 extends Activity {
             }
         });
 
-        btnDone.setOnClickListener(new View.OnClickListener() {
+        btnEmailAuth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

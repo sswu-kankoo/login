@@ -15,7 +15,7 @@
         <activity android:name=".RegistActivity1_auth_dialog" />
         <activity android:name=".RegistActivity1_auth" />
         <activity android:name=".RegistActivity2" />
-        <activity android:name=".RegistActivity" />
+        <activity android:name=".RegistActivity1" />
         <activity android:name=".QRgen" />
         <activity android:name=".MainActivity">
             <intent-filter>

@@ -7,19 +7,28 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".RegistActivity1_auth">
 
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
     <EditText
         android:id="@+id/authEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="인증 받을 이메일 계정을 입력하세요." />
+        android:hint="성신 이메일 계정을 입력하세요." />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
 
     <Button
-        android:id="@+id/authBtn"
+        android:id="@+id/btnSendAuthNum"
         android:layout_width="426dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="이메일 인증하기" />
+        android:text="인증번호전송" />
 
 
 </LinearLayout>

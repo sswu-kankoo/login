@@ -105,6 +105,7 @@ public class RegistActivity2 extends AppCompatActivity {
                 }
 
                 // 사업자등록번호 입력 확인
+
                 if (etBRN.getText().toString().length() == 0) {
                     Toast.makeText(RegistActivity2.this, "이름을 입력하세요!", Toast.LENGTH_SHORT).show();
                     etBRN.requestFocus();

@@ -57,7 +57,7 @@ tools:context=".mainpage1">
     android:layout_height="10dp" />
 
 <Button
-    android:id="@+id/button3"
+    android:id="@+id/btnMakeQR"
     android:layout_width="174dp"
     android:layout_height="wrap_content"
     android:text="간식쿠폰 제작" />

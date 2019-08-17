@@ -74,11 +74,11 @@ tools:context=".RegistActivity1">
     android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btnDone"
+            android:id="@+id/btnEmailAuth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="가입" />
+            android:text="입력" />
 
         <Button
             android:id="@+id/btnCancel"

@@ -154,6 +154,8 @@ public class RegistActivity1 extends Activity {
                 finish();
             }
         });
+
+
 /*    private void submitForm() {
         String text="안녕하세요? "+ this.etPersonName.getText().toString();
 

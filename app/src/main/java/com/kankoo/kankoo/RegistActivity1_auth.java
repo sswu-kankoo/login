@@ -128,5 +128,3 @@ public class RegistActivity1_auth extends AppCompatActivity implements View.OnCl
 
 
 }
-
-//https://gdtbgl93.tistory.com/2?category=755544

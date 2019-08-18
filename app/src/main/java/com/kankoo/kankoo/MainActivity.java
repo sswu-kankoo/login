@@ -25,7 +25,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //로그인 검증화면으로 전환
+        /*로그인 검증화면으로 전환 (미완성)
+        Button ChsRegist = (Button) findViewById(R.id.btnRegist);
+        ChsRegist.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(getApplicationContext(), RegistChoose.class);
+                startActivityForResult(Intent, 100);
+            }
+        }); */
 
 
     }
